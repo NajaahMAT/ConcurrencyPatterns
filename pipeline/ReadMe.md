@@ -1,0 +1,3 @@
+The pipeline pattern in Go is a powerful tool for creating a chain of processing elements arranged so that the output of one element is the input of the next. This pattern is often used in data processing to break up a task that operates on a sequence of data into a series of individual stages that can run concurrently.
+
+The pipeline concurrency pattern is used to process a stream of data by breaking it down into multiple stages, each performing a specific operation on the data. Each stage consists of a goroutine that receives input from a channel, processes it, and sends the result to the next stage via another channel. This pattern enables parallel and efficient processing of data by dividing the workload into smaller, independent tasks.
